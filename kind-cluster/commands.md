@@ -111,7 +111,7 @@
 
 - Forward ports to access Argo CD server:
   ```bash
-  kubectl port-forward -n argocd service/argocd-server 8443:443 &
+  kubectl port-forward -n argocd service/argocd-server 8443:443 --address=0.0.0.0 &
   ```
 
 ---
